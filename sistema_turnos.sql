@@ -178,7 +178,7 @@ DROP TABLE IF EXISTS `ticket`;
 CREATE TABLE `ticket` (
   `id` int NOT NULL AUTO_INCREMENT,
   `fecha` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `total` decimal(10,0) DEFAULT NULL,
+  `total` decimal(10,2) DEFAULT NULL,
   `estado` int NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
