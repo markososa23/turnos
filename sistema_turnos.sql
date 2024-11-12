@@ -120,10 +120,10 @@ DROP TABLE IF EXISTS `precios`;
 CREATE TABLE `precios` (
   `id` int NOT NULL AUTO_INCREMENT,
   `id_servicios` int DEFAULT NULL,
-  `base` decimal(10,0) DEFAULT NULL,
+  `base` decimal(10,2) DEFAULT NULL,
   `medida` enum('corto','medio','largo') DEFAULT NULL,
   `duracion_min` int DEFAULT NULL,
-  `subtotal` decimal(10,0) DEFAULT NULL,
+  `subtotal` decimal(10,2) DEFAULT NULL,
   `estado` int NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   KEY `precios_ibfk_1_idx` (`id_servicios`),
